@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TVtitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Multiplicacion"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/GuindaCSTM"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/NUMres"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/BTcalc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/num1TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="30dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@color/BlueCSTM"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/TVx"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVtitulo" />
+
+    <TextView
+        android:id="@+id/num2TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="5dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@color/GuindaCSTM"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TVx"
+        app:layout_constraintTop_toBottomOf="@+id/TVtitulo" />
+
+    <TextView
+        android:id="@+id/TVx"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif"
+        android:text="x"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/WhiteCSTM"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toStartOf="@+id/num2TV"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/num1TV"
+        app:layout_constraintTop_toBottomOf="@+id/TVtitulo" />
+
+    <Button
+        android:id="@+id/BTcalc"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/GreenCSTM"
+        android:fontFamily="sans-serif-light"
+        android:onClick="cambiarPantalla"
+        android:text="VERIFICAR"
+        android:textColor="@color/WhiteCSTM"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#2196F3" />
+
+    <TextView
+        android:id="@+id/aciertos"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:text="Aciertos: 0"
+        android:textAlignment="center"
+        android:textColor="@color/GreenCSTM"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/aciertos2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVtitulo" />
+
+    <TextView
+        android:id="@+id/aciertos2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="Fallos: 0"
+        android:textAlignment="center"
+        android:textColor="@color/RedCSTM"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/aciertos"
+        app:layout_constraintTop_toBottomOf="@+id/TVtitulo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

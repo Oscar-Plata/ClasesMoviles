@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">VistaRecicler</string>
+
+    <string-array name="dog_array">
+        <item>Sisus</item>
+
+
+        <item>Chihuahua</item>
+        <item>Gran Danes</item>
+        <item>Dalmata</item>
+        <item>Pastor Aleman</item>
+        <item>Schnauzer</item>
+        <item>Poodle</item>
+        <item>Pitbull</item>
+        <item>Golden Retriever</item>
+        <item>Husky</item>
+        <item>Shiba</item>
+        <item>Dog</item>
+    </string-array>
+
+</resources>
